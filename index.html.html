@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais | Mak Metal Agro</title>
+    <style>
+        :root {
+            --cor-primaria: #1a1a1a; /* Cinza Industrial */
+            --cor-destaque: #2ecc71; /* Verde Agro ou use a cor da logo */
+            --cor-metal: #e0e0e0;
+            --fonte: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0f0f0f;
+            color: white;
+            font-family: var(--fonte);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100-vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .social-card {
+            background: linear-gradient(145deg, #1e1e1e, #141414);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--cor-destaque);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* Efeito de brilho metálico no hover */
+        .social-card::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+
+        .social-card:hover::after {
+            left: 100%;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #252525;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .info {
+            text-align: left;
+        }
+
+        .info span {
+            display: block;
+            font-size: 0.75rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .info strong {
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Mak Metal Agro</h1>
+            <p>Conecte-se com nossa tecnologia no campo</p>
+        </div>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/makmetalagro" class="social-card" target="_blank">
+            <div class="icon">IG</div>
+            <div class="info">
+                <span>Siga no Instagram</span>
+                <strong>@makmetalagro</strong>
+            </div>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://youtube.com/@MakMetalAgro" class="social-card" target="_blank">
+            <div class="icon">YT</div>
+            <div class="info">
+                <span>Inscreva-se no Canal</span>
+                <strong>/MakMetalAgro</strong>
+            </div>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@makmetalagro" class="social-card" target="_blank">
+            <div class="icon">TK</div>
+            <div class="info">
+                <span>Acompanhe no TikTok</span>
+                <strong>@makmetalagro</strong>
+            </div>
+        </a>
+
+        <div class="footer">
+            &copy; 2026 Mak Metal Agro - Engenharia de Precisão.
+        </div>
+    </div>
+
+</body>
+</html>
